@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alex Alarcón Perpén · Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap">
+<style>
+:root{--bg:#f4f7fa;--surface:#fff;--ink:#14283a;--muted:#546a7c;--navy:#17405f;--accent:#1f6f9f;--line:#d5dfe8;--term:#0f2638;--termink:#cfe6f5;--termacc:#7fd1ff;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1b27;--surface:#142634;--ink:#e6eff6;--muted:#9bb0c0;--navy:#8cc4e6;--accent:#6bb7e6;--line:#25394a;--term:#08131c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1b27;--surface:#142634;--ink:#e6eff6;--muted:#9bb0c0;--navy:#8cc4e6;--accent:#6bb7e6;--line:#25394a;--term:#08131c;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Nunito Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Chakra Petch",system-ui,sans-serif;margin:0;line-height:1.15}
+main{max-width:960px;margin:0 auto;padding:0 20px 60px}
+header.top{background:var(--navy);color:#fff;border-radius:0 0 28px 28px}
+:root[data-theme="dark"] header.top,:root:not([data-theme="light"]) header.top{--hb:#12405f}
+header.top .in{max-width:960px;margin:0 auto;padding:56px 20px 48px;display:grid;gap:28px;grid-template-columns:1fr;align-items:center}
+@media(min-width:760px){header.top .in{grid-template-columns:1.1fr 1fr}}
+header.top h1{font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:.02em;color:#fff}
+header.top p{color:#d6e6f2;max-width:46ch;margin:14px 0 0}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btns a{padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;border:1.5px solid #fff;color:#fff}
+.btns a.main{background:#fff;color:#12405f}
+.btns a:focus-visible,a:focus-visible{outline:3px solid var(--termacc);outline-offset:2px}
+.term{background:var(--term);color:var(--termink);border-radius:12px;padding:18px 20px;font:14px/1.7 ui-monospace,Menlo,Consolas,monospace;box-shadow:0 0 0 1px rgba(255,255,255,.12);overflow-x:auto}
+.term b{color:var(--termacc);font-weight:400}
+.term .dim{opacity:.6}
+.cur{display:inline-block;width:8px;height:15px;background:var(--termacc);vertical-align:-2px;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.cur{animation:none}}
+section{margin-top:56px}
+h2{font-size:1.7rem;color:var(--navy);margin-bottom:20px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{font-size:1.1rem;margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.tl{border-left:3px solid var(--accent);padding-left:22px;display:grid;gap:26px}
+.tl article{position:relative}
+.tl article::before{content:"";position:absolute;left:-30px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.tl .when{color:var(--accent);font-weight:600;font-size:.9rem}
+.tl h3{font-size:1.15rem;margin:2px 0}
+.tl p{margin:4px 0 0;color:var(--muted)}
+.lang{display:flex;gap:12px;flex-wrap:wrap}
+.lang span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 16px}
+.lang b{color:var(--accent)}
+.contact{display:grid;gap:10px}
+.contact a{color:var(--accent);font-weight:600}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="in">
+  <div>
+   <h1>Alex Alarcón Perpén</h1>
+   <p>Estudiante de Administración de Sistemas Informáticos en Red con base científico-tecnológica y experiencia práctica en la Junta de Andalucía. Me interesan los sistemas, las bases de datos y la nube (AWS).</p>
+   <div class="btns"><a class="main" href="#contacto">Contactar</a><a href="#experiencia">Ver experiencia</a></div>
+  </div>
+  <div class="term" role="img" aria-label="Resumen en formato terminal: ASIR, Melilla, AWS, MySQL, Python, Linux">
+<span class="dim">alex@asir:~$</span> <b>whoami</b><br>
+alex-alarcon · estudiante ASIR<br>
+<span class="dim">alex@asir:~$</span> <b>cat stack.txt</b><br>
+windows, linux, mysql, python,<br>
+html, javascript, redes, aws<br>
+<span class="dim">alex@asir:~$</span> <b>status</b><br>
+disponible para prácticas y primer empleo IT <span class="cur"></span>
+  </div>
+ </div>
+</header>
+
+<main>
+<section id="sobre-mi">
+ <h2>Sobre mí</h2>
+ <div class="card"><p style="font-size:1.05rem;color:var(--ink)">Soy de Melilla y estudio el ciclo de Administración de Sistemas Informáticos en Red (ASIR). Vengo de un Bachillerato Científico-Tecnológico, que me dio una base sólida para la informática. En mis prácticas en la Junta de Andalucía trabajé administrando sistemas, montando ordenadores y resolviendo los problemas informáticos de los trabajadores. Me gusta aprender cómo funcionan los sistemas por dentro, y ahora estoy ampliando mis conocimientos de la nube con AWS.</p></div>
+</section>
+
+<section id="habilidades">
+ <h2>Habilidades técnicas</h2>
+ <div class="grid">
+  <div class="card"><h3>Sistemas operativos</h3><p>Conocimientos de Windows y Linux.</p></div>
+  <div class="card"><h3>Bases de datos</h3><p>Gestión de bases de datos y diseño con MySQL.</p></div>
+  <div class="card"><h3>Programación</h3><p>Python, y diseño web con HTML y JavaScript.</p></div>
+  <div class="card"><h3>Redes</h3><p>Gestión de redes informáticas.</p></div>
+  <div class="card"><h3>Nube</h3><p>Control de la nube usando AWS. Cursos de AWS como formación complementaria.</p></div>
+  <div class="card"><h3>Soporte</h3><p>Experiencia laboral en el sector, atendiendo incidencias de usuarios.</p></div>
+ </div>
+</section>
+
+<section id="experiencia">
+ <h2>Experiencia profesional</h2>
+ <div class="tl">
+  <article>
+   <div class="when">Julio 2025 – Agosto 2025</div>
+   <h3>Prácticas · Junta de Andalucía</h3>
+   <p>Administración de sistemas, montaje de ordenadores y ayuda a los trabajadores con los problemas de sus equipos en las instalaciones.</p>
+  </article>
+ </div>
+</section>
+
+<section id="formacion">
+ <h2>Formación</h2>
+ <div class="tl">
+  <article>
+   <div class="when">2025 – 2027 · Cursando</div>
+   <h3>Administración de Sistemas Informáticos en Red</h3>
+   <p>IES Romero Esteo · Digitech</p>
+  </article>
+  <article>
+   <div class="when">2023 – 2025</div>
+   <h3>Bachillerato Científico-Tecnológico</h3>
+   <p>IES Juan Antonio Fernández Pérez, Melilla</p>
+  </article>
+  <article>
+   <div class="when">Formación complementaria</div>
+   <h3>Cursos de AWS</h3>
+  </article>
+ </div>
+</section>
+
+<section id="objetivos">
+ <h2>Qué busco</h2>
+ <div class="grid">
+  <div class="card"><h3>Experiencia en el sector</h3><p>Seguir ganando experiencia en un puesto de sistemas o soporte técnico, aplicando lo que estudio en ASIR.</p></div>
+  <div class="card"><h3>Crecer en la nube</h3><p>Profundizar en AWS y en la administración de infraestructuras.</p></div>
+  <div class="card"><h3>Trabajo en equipo</h3><p>Aportar responsabilidad, ganas de aprender y capacidad para resolver incidencias.</p></div>
+ </div>
+</section>
+
+<section id="idiomas">
+ <h2>Idiomas</h2>
+ <div class="lang"><span>Inglés <b>B2</b></span><span>Francés <b>A1</b></span></div>
+</section>
+
+<section id="contacto">
+ <h2>Contacto</h2>
+ <div class="card contact">
+  <div>Correo: <a href="mailto:alarconalex963@gmail.com">alarconalex963@gmail.com</a></div>
+  <div>Teléfono: <a href="tel:+34626870347">626 87 03 47</a></div>
+  <div>LinkedIn: <a href="https://www.linkedin.com/in/%C3%A1lex-alarc%C3%B3n-perp%C3%A9n-9291bb444/" target="_blank" rel="noopener">Álex Alarcón Perpén</a></div>
+  <div>Ubicación: C/ el laberinto nº2, Melilla</div>
+ </div>
+</section>
+</main>
+<footer>© Alex Alarcón Perpén</footer>
+</body>
+</html>
